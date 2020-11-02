@@ -1,3 +1,18 @@
+starwarsdb_tables <- function() {
+  films <- tibble::as_tibble(starwarsdb::films)
+  list(
+    films = starwarsdb::films,
+    people = starwarsdb::people,
+    planets = starwarsdb::planets,
+    species = starwarsdb::species,
+    vehicles = starwarsdb::vehicles,
+    pilots = starwarsdb::pilots,
+    films_people = starwarsdb::films_people,
+    films_planets = starwarsdb::films_planets,
+    films_vehicles = starwarsdb::films_vehicles
+  )
+}
+
 
 #' Films
 #'
